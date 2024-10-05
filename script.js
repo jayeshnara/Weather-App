@@ -35,6 +35,8 @@ async function checkWeather(city) {
       weatherIcon.src = "images/mist.png";
     } else if (data.weather[0].main == "Thunderstorm") {
       weatherIcon.src = "images/thunderstorm.png";
+    }else if (data.weather[0].main == "Haze") {
+      weatherIcon.src = "images/humidity.png";
     }
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none ";
